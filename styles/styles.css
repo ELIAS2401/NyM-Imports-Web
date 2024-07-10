@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --rosa: #f90091;
+    --negro: #000;
+    --blanco: #ffffff;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+body {
+    font-size: 16px;
+    /*1rem = 10px*/
+    font-family: "Cairo", sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Header*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 3rem;
+}
+
+.diamanteHeader {
+    width: 7rem;
+}
+
+.icon {
+    width: 3rem;
+}
+
+@media (min-width: 768px) {
+    .diamanteHeader {
+        width: 12rem;
+        height: 12rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .icon {
+        width: 6rem;
+    }
+}
+
+/*Nav*/
+
+nav {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--rosa);
+    align-items: center;
+}
+
+.navEnlace {
+    color: var(--blanco);
+    padding: 0.5rem;
+}
+
+.navEnlace:hover {
+    background-color: #9e005c9b;
+}
+
+.contenedorBuscar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.buscador {
+    width: 8rem;
+    height: 1rem;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.iconLupa {
+    width: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    nav {
+        font-size: 2rem;
+    }
+
+    .navEnlace {
+        padding: 0.2rem;
+    }
+
+    .buscador {
+        width: 15rem;
+        height: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .iconLupa {
+        width: 2rem;
+    }
+}
+
+/*Nav articles*/
+
+@media (min-width: 768px) {
+    .articuloHombres {
+        position: fixed;
+        padding: 3rem;
+        width: 40rem;
+        background-color: rgb(0, 0, 0);
+        margin-top: 21.4rem;
+        margin-right: 30rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+    
+    .enlacesAricles{
+        color: var(--blanco);
+    }
+    
+    .enlacesAricles:hover {
+        /*text-shadow: desplazamiento-horizontal desplazamiento-vertical difuminado color;*/
+        text-shadow: 0 0 10px var(--rosa);
+    }
+    /*Article mujer*/
+    .articuloMujer {
+        position: fixed;
+        padding: 3rem;
+        width: 40rem;
+        background-color: rgb(0, 0, 0);
+        margin-top: 25.1rem;
+        margin-left: 30rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+}
+
+/*footer*/
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #2929299c;
+    padding: 2rem;
+}
+
+.nosotros a {
+    color: var(--blanco);
+}
+
+.contactanos {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconosIg {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.metodoPago {
+    width: 17rem;
+}
+
+.mp {
+    width: 12rem;
+}
+
+.efectivo,
+.transferencia {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
