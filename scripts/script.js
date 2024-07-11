@@ -1,7 +1,15 @@
-
 let hombres = document.getElementById("hombreEnlace");
 let articuloHombres = document.getElementById("articuloHombre");
 
+//mujeres
+
+let mujeres = document.getElementById("mujerEnlace");
+let articuloMujeres = document.getElementById("articuloMujer");
+
+//accesorios
+
+let accesorios = document.getElementById("accesoriosEnlace");
+let articuloAccesorios = document.getElementById("articuloAccesorios");
 
 function mostrar(artic) {
     artic.classList.remove("ocultar");
@@ -17,16 +25,6 @@ function ocultar(articulo) {
     })
 }
 
-//mujeres
-
-let mujeres = document.getElementById("mujerEnlace");
-let articuloMujeres = document.getElementById("articuloMujer");
-
-//accesorios
-
-let accesorios = document.getElementById("accesoriosEnlace");
-let articuloAccesorios = document.getElementById("articuloAccesorios");
-
 //Responsive ipad
 
 function toggleIpad(elemento) {
@@ -37,6 +35,7 @@ function togglear(e, articuloAMostrar) {
     e.preventDefault();
     toggleIpad(articuloAMostrar);
 }
+
 function hombresClick(e) {
     togglear(e, articuloHombres);
 }
