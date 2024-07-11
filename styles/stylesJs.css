@@ -1,4 +1,10 @@
+
 .ocultar {
     display: none;
 }
 
+@media (min-width: 768px) {
+    .ocultar {
+        display: none;
+    }
+}
