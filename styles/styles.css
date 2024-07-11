@@ -128,31 +128,94 @@ nav {
     .articuloHombres {
         position: fixed;
         padding: 3rem;
-        width: 40rem;
+        max-width: 100%;
         background-color: rgb(0, 0, 0);
         margin-top: 21.4rem;
-        margin-right: 30rem;
+        margin-right: 6rem;
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
     }
-    
-    .enlacesAricles{
+
+    .enlacesArticles {
         color: var(--blanco);
     }
-    
-    .enlacesAricles:hover {
+
+    .enlacesArticles:hover {
         /*text-shadow: desplazamiento-horizontal desplazamiento-vertical difuminado color;*/
         text-shadow: 0 0 10px var(--rosa);
     }
+
     /*Article mujer*/
     .articuloMujer {
         position: fixed;
         padding: 3rem;
-        width: 40rem;
+        max-width: 100%;
         background-color: rgb(0, 0, 0);
         margin-top: 25.1rem;
-        margin-left: 30rem;
+        margin-left: 25rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+
+    /*Article accesorios*/
+    .articuloAccesorios {
+        position: fixed;
+        padding: 3rem;
+        max-width: 100%;
+        background-color: rgb(0, 0, 0);
+        margin-top: 25.1rem;
+        margin-left: 55.3rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .articuloHombres {
+        position: fixed;
+        padding: 3rem;
+        width: 30rem;
+        background-color: rgb(0, 0, 0);
+        margin-top: 21.5rem;
+        margin-right: 10rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+
+    .enlacesArticles {
+        color: var(--blanco);
+    }
+
+    .enlacesArticles:hover {
+        /*text-shadow: desplazamiento-horizontal desplazamiento-vertical difuminado color;*/
+        text-shadow: 0 0 10px var(--rosa);
+    }
+
+    /*Article mujer*/
+    .articuloMujer {
+        position: fixed;
+        padding: 3rem;
+        width: 30rem;
+        background-color: rgb(0, 0, 0);
+        margin-top: 25.2rem;
+        margin-left: 50rem;
+        display: flex;
+        flex-direction: column;
+        border-radius: 1rem;
+    }
+
+    /*Article accesorios*/
+    .articuloAccesorios {
+        position: fixed;
+        padding: 3rem;
+        width: 30rem;
+        background-color: rgb(0, 0, 0);
+        margin-top: 25.2rem;
+        margin-left: 119.3rem;
         display: flex;
         flex-direction: column;
         border-radius: 1rem;
