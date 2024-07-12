@@ -1,0 +1,89 @@
+.contenedor-carrusel {
+    padding: 40px;
+
+}
+
+.clasesDes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-carrusel h4 {
+    display: block;
+    text-align: left;
+    margin-bottom: 2rem;
+
+}
+
+.contenedorRopa img {
+    width: 40rem;
+    height: 40rem;
+}
+
+/*/////*aca pongo los cambios particulares del carrousel*/
+
+.slick-arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 1px;
+    color: transparent;
+    position: absolute;
+    top: -56px;
+    border: 0px;
+    right: 0;
+}
+
+.slick-prev {
+
+    right: 40px;
+    background: white url("/assets/iconos/flecha-izquierda.png");
+    background-size: 100%;
+    transform: rotate(360deg);
+
+}
+
+.slick-next {
+ 
+    background: white url("/assets/iconos/flecha-izquierda.png");
+    background-size: 100%;
+    transform: rotate(-180deg);
+}
+
+
+@media (min-width: 768px) {
+    .contenedor-carrusel h4 {
+
+
+        display: block;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .contenedorRopa {
+    
+    }
+    
+}
+
+
+@media (min-width: 1024px) {
+
+    .slick-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 1px;
+        color: transparent;
+        position: absolute;
+        top: -56px;
+        right: 9rem;
+    }
+    .slick-prev {
+        transform: rotate(-360deg);
+    }
+
+    .slick-next {
+        right: 50px;
+        transform: rotate(-180deg);
+    }
+
+}
