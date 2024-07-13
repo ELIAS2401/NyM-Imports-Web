@@ -1,19 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
 .contenedor-carrusel {
     padding: 40px;
-
 }
 
 
-.clasesDes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 
 .contenedor-carrusel h2 {
     display: block;
-    text-align: left;
+    text-align: center;
     line-height: 1.8;
     color: #6a6a6a;
     margin-bottom: 2.5rem;
@@ -40,8 +39,7 @@
 }
 
 .slick-prev {
-
-    right: 40px;
+    left: 0px; 
     background: white url("/assets/iconos/flecha-izquierda.png");
     background-size: 100%;
     transform: rotate(360deg);
@@ -49,7 +47,7 @@
 }
 
 .slick-next {
-
+    right: 0px;
     background: white url("/assets/iconos/flecha-izquierda.png");
     background-size: 100%;
     transform: rotate(-180deg);
@@ -60,11 +58,9 @@
 }
 
 @media (min-width: 768px) {
-
-
     .contenedor-carrusel h2 {
         display: block;
-        text-align: left;
+        text-align: center;
         line-height: 1.8;
         color: #6a6a6a;
         margin-bottom: 2.3rem;
@@ -75,6 +71,10 @@
 
 
 @media (min-width: 1024px) {
+
+    .clasesDes {
+        margin-left: 40px;
+        }
     .contenedorRopa img {
         border-radius: 4px;
     }
@@ -94,7 +94,7 @@
         color: transparent;
         position: absolute;
         top: -56px;
-        right: 9rem;
+   
     }
 
     .slick-prev {
@@ -102,7 +102,7 @@
     }
 
     .slick-next {
-        right: 50px;
+        right: 38px;
         transform: rotate(-180deg);
     }
 
