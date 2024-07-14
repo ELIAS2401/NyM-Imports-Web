@@ -127,6 +127,7 @@ nav {
 @media (min-width: 768px) {
     .articuloHombres {
         position: fixed;
+        z-index: 10;
         padding: 3rem;
         max-width: 100%;
         background-color: rgb(0, 0, 0);
@@ -149,6 +150,7 @@ nav {
     /*Article mujer*/
     .articuloMujer {
         position: fixed;
+        z-index: 10;
         padding: 3rem;
         max-width: 100%;
         background-color: rgb(0, 0, 0);
@@ -162,6 +164,7 @@ nav {
     /*Article accesorios*/
     .articuloAccesorios {
         position: fixed;
+        z-index: 10;
         padding: 3rem;
         max-width: 100%;
         background-color: rgb(0, 0, 0);
@@ -176,6 +179,7 @@ nav {
 @media (min-width: 1024px) {
     .articuloHombres {
         position: fixed;
+        z-index: 10;
         padding: 3rem;
         width: 30rem;
         background-color: rgb(0, 0, 0);
@@ -198,6 +202,7 @@ nav {
     /*Article mujer*/
     .articuloMujer {
         position: fixed;
+        z-index: 10;
         padding: 3rem;
         width: 30rem;
         background-color: rgb(0, 0, 0);
@@ -248,6 +253,7 @@ nav {
 
 .metodoPago {
     width: 17rem;
+justify-content: center;    margin: 0;
 }
 
 .mp {
@@ -265,4 +271,10 @@ nav {
     .info {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .formasDePago {
+        margin-bottom: 1rem;
+    }
+
+    .mp {}
 }
