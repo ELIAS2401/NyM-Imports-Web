@@ -120,6 +120,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    transition: background-image 0.3s  ease-in-out, opacity 0.3s  ease-in-out;
+    opacity: 1;
 }
 .imagen-tarjeta-accesorio{
     background-image: url("/assets/ropa/3.jpeg");
@@ -131,7 +133,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    transition: background-image 0.3s  ease-in-out, opacity 0.3s  ease-in-out;
+    opacity: 1;
 }
+
+.imagen-tarjeta-accesorio.hidden {
+    opacity: 0;
+  }        
+
 .envioGratis{
     text-align: center;
     background-color: rgba(194, 194, 194, 0.5);
