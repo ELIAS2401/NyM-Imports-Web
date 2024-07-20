@@ -34,7 +34,7 @@ mujeres.addEventListener("mouseout", () => ocultar(articuloMujeres))
 /// haciendo el js de las tarjetas -----
 
 let elementoImagenZapatilla = document.getElementById('imagen-tarjeta-zapatilla');
-let elemento= document.querySelector('.imagen-tarjeta-zapatilla')
+let elemento = document.querySelector('.imagen-tarjeta-zapatilla');
 let imagenOriginalZapatilla = '/assets/ropa/1.jpeg';
 let nuevaImagenZapatilla = '/assets/ropa/2.jpeg'; // Cambia esta URL a la nueva imagen
 
@@ -78,5 +78,31 @@ elementoImagenAccesorio.addEventListener('mouseout', function() {
     setTimeout(() => {
         elementoAccesorio.style.backgroundImage = `url(${imagenOriginalAccesorio})`;
         elementoAccesorio.style.opacity = '1';
+    }, 300); // Ajusta este valor al mismo que el de la transición
+});
+
+
+
+// otroooooooooooooooooooooo prod
+
+let elementoImagenOtro = document.getElementById('imagen-tarjeta-otros');
+let elementoOtro = document.querySelector('.imagen-tarjeta-otros');
+let imagenOriginalOtro = '/assets/ropa/4.jpeg';
+let nuevaImagenOtro = '/assets/ropa/8.jpeg';
+
+elementoImagenOtro.addEventListener('mouseover', function() {
+    elementoOtro.style.opacity = '0';
+    setTimeout(() => {
+        elementoOtro.style.opacity = '1';
+        elementoOtro.style.backgroundImage = `url(${nuevaImagenOtro})`;
+       
+    }, 300); // Ajusta este valor al mismo que el de la transición
+});
+
+elementoImagenOtro.addEventListener('mouseout', function() {
+    elementoOtro.style.opacity = '0';
+    setTimeout(() => {
+        elementoOtro.style.backgroundImage = `url(${imagenOriginalOtro})`;
+        elementoOtro.style.opacity = '1';
     }, 300); // Ajusta este valor al mismo que el de la transición
 });
